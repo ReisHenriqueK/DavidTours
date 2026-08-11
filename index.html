@@ -6,8 +6,9 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  // No analytics cookies are set until the visitor accepts the cookie banner.
+  gtag('consent', 'default', { 'analytics_storage': 'denied' });
   gtag('js', new Date());
-
   gtag('config', 'G-ZGJPT9N7WZ');
 </script>
 <meta charset="UTF-8">
@@ -617,9 +618,20 @@
   </div>
   <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-white/10 flex items-center justify-between text-[12px] text-white/50">
     <span>© 2026 David Tours</span>
-    <span>Lisbon, Portugal</span>
+    <span>Lisbon, Portugal · <a href="privacy.html" class="hover:text-white/80">Privacy Policy</a></span>
   </div>
 </footer>
+
+<!-- COOKIE CONSENT BANNER -->
+<div id="cookie-banner" class="hidden fixed bottom-0 inset-x-0 z-[100] bg-[#1B2733] text-white px-6 py-5 shadow-[0_-4px_20px_rgba(0,0,0,0.2)]">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-[13px] text-white/80 leading-relaxed">We use Google Analytics cookies to understand how visitors use this site. <a href="privacy.html" class="underline hover:text-white">Learn more</a>.</p>
+    <div class="flex items-center gap-3 shrink-0">
+      <button onclick="rejectCookies()" class="text-[13px] font-medium text-white/70 hover:text-white px-4 py-2">Reject</button>
+      <button onclick="acceptCookies()" class="text-[13px] font-semibold bg-[#1D5C8A] hover:bg-[#154A6E] rounded-full px-5 py-2">Accept</button>
+    </div>
+  </div>
+</div>
 
 <script>
   function toggleMobileMenu() {
@@ -678,6 +690,27 @@
       }
     });
   });
+
+  // Cookie consent: analytics stays off until the visitor accepts
+  (function () {
+    const consent = localStorage.getItem('cookie_consent');
+    if (consent === 'granted') {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+    } else if (consent !== 'denied') {
+      document.getElementById('cookie-banner').classList.remove('hidden');
+    }
+  })();
+
+  function acceptCookies() {
+    localStorage.setItem('cookie_consent', 'granted');
+    gtag('consent', 'update', { analytics_storage: 'granted' });
+    document.getElementById('cookie-banner').classList.add('hidden');
+  }
+
+  function rejectCookies() {
+    localStorage.setItem('cookie_consent', 'denied');
+    document.getElementById('cookie-banner').classList.add('hidden');
+  }
 </script>
 
 </body>
