@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGJPT9N7WZ"></script>
 <script>
@@ -11,14 +13,15 @@
   gtag('js', new Date());
   gtag('config', 'G-ZGJPT9N7WZ');
 </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>David Tours | Private Tuk-Tuk Tours in Lisbon, Portugal</title>
-<meta name="description" content="Private, locally-guided tuk-tuk tours of Lisbon. Three signature 2-hour routes — €150 flat per tuk-tuk, up to 6 guests, private for your group.">
+<meta name="description" content="Private, locally-guided tuk-tuk tours of Lisbon. Sightseeing routes through Alfama, Belém and the historic center — €150 flat per tuk-tuk, up to 6 guests.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://davidtours.pt/">
 <meta name="theme-color" content="#1D5C8A">
-<link rel="preload" as="image" href="images/alfama-rooftops-hero.jpg" fetchpriority="high">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preload" as="image" href="images/alfama-rooftops-hero.webp" type="image/webp" fetchpriority="high">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -38,8 +41,6 @@
 <meta name="twitter:description" content="Private, locally-guided tuk-tuk tours of Lisbon. Three signature 2-hour routes — €150 flat per tuk-tuk, up to 6 guests.">
 <meta name="twitter:image" content="https://davidtours.pt/images/belem-tower-tuktuk.jpg">
 <meta name="twitter:image:alt" content="A David Tours tuk-tuk parked in front of Belém Tower in Lisbon">
-
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231D5C8A'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle'%3E%F0%9F%9B%BA%3C/text%3E%3C/svg%3E">
 
 <script type="application/ld+json">
 {
@@ -239,13 +240,16 @@
 <main>
 <!-- HERO -->
 <section id="top" class="relative overflow-hidden min-h-[680px] flex items-center">
-  <img src="images/alfama-rooftops-hero.jpg" width="2400" height="1348" class="absolute inset-0 w-full h-full object-cover" alt="Rooftops of the Alfama district, Lisbon" fetchpriority="high">
+  <picture>
+    <source srcset="images/alfama-rooftops-hero.webp" type="image/webp">
+    <img src="images/alfama-rooftops-hero.jpg" width="2000" height="1123" class="absolute inset-0 w-full h-full object-cover" alt="Rooftops of the Alfama district, Lisbon" fetchpriority="high">
+  </picture>
   <div class="absolute inset-0 bg-black/60"></div>
   <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20"></div>
   <div class="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-b from-transparent to-[#F3F6F8]"></div>
   <div class="relative z-10 max-w-4xl mx-auto px-6 py-24 text-center text-white">
     <span class="inline-block bg-white/15 border border-white/25 backdrop-blur rounded-full px-4 py-1.5 text-[12px] font-semibold tracking-widest uppercase mb-6">Locally Owned · Private Tuk-Tuk Tours in Lisbon</span>
-    <h1 class="text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05]">See Lisbon Through<br>Local Eyes</h1>
+    <h1 class="text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05]">See Lisbon by Tuk-Tuk,<br>Through Local Eyes</h1>
     <p class="mt-5 text-white/90 max-w-lg mx-auto text-[16px] leading-relaxed">Real Lisbon. Real locals. Real stories. Explore the city's hills, viewpoints and hidden corners aboard a private tuk-tuk with a Lisbon-born guide who calls it home — not a franchise, not a script.</p>
     <div class="mt-8 flex items-center justify-center gap-4 flex-wrap">
       <a href="#tours" data-ga="cta_click" data-ga-label="hero_view_tours" class="inline-block bg-[#1D5C8A] text-white rounded-full px-6 py-3 text-[14px] font-semibold hover:bg-[#154A6E]">View Our Tours</a>
@@ -286,7 +290,10 @@
     </div>
   </div>
   <div class="relative">
-    <img src="images/about-tuktuk.jpg" width="1400" height="788" class="rounded-2xl w-full h-full min-h-[380px] object-cover shadow-xl" style="object-position: 58% 62%;" alt="A David Tours tuk-tuk parked at Praça Luís de Camões in Lisbon" loading="lazy" decoding="async">
+    <picture>
+      <source srcset="images/about-tuktuk.webp" type="image/webp">
+      <img src="images/about-tuktuk.jpg" width="1400" height="788" class="rounded-2xl w-full h-full min-h-[380px] object-cover shadow-xl" style="object-position: 58% 62%;" alt="A David Tours tuk-tuk parked at Praça Luís de Camões in Lisbon" loading="lazy" decoding="async">
+    </picture>
     <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg border border-black/5 px-5 py-4 hidden sm:block">
       <p class="text-[13px] font-semibold">"Real Lisbon. Real locals.<br>Real stories."</p>
     </div>
@@ -297,14 +304,17 @@
 <section id="tours" class="max-w-6xl mx-auto px-6 py-12 md:py-16">
   <div class="text-center max-w-xl mx-auto mb-6 md:mb-10">
     <p class="text-[12px] tracking-widest uppercase text-[#1D5C8A] font-semibold mb-3">Our Tours</p>
-    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight leading-tight">Three signature routes through the city</h2>
+    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight leading-tight">Three signature tuk-tuk routes through Lisbon</h2>
     <p class="mt-4 text-[#1B2733]/70 text-[15px] leading-relaxed">Every tour runs 2 hours, welcomes up to 6 guests, and is priced at a flat €150 per tuk-tuk — not per person. Split between a full group, that's as little as €25 a head for a private, guided ride through Lisbon.</p>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- TOUR 1 -->
     <div id="tour-old-town" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-black/5 flex flex-col">
-      <img src="images/sao-jorge-castle.jpg" width="900" height="492" class="w-full h-48 object-cover" alt="São Jorge Castle overlooking Lisbon's Old Town" loading="lazy" decoding="async">
+      <picture>
+        <source srcset="images/sao-jorge-castle.webp" type="image/webp">
+        <img src="images/sao-jorge-castle.jpg" width="900" height="492" class="w-full h-48 object-cover" alt="São Jorge Castle overlooking Lisbon's Old Town" loading="lazy" decoding="async">
+      </picture>
       <div class="p-6 flex flex-col flex-1">
         <h3 class="font-semibold text-lg mb-2">Old Town Panoramic Tour</h3>
         <p class="text-[#1B2733]/70 text-[13px] leading-relaxed mb-4 flex-1">Wind through Alfama, Graça and Mouraria up to the castle area, taking in the Lisbon Cathedral and the sweeping views from the Senhora do Monte viewpoint.</p>
@@ -323,7 +333,10 @@
     </div>
     <!-- TOUR 2 -->
     <div id="tour-historical-center" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-black/5 flex flex-col">
-      <img src="images/praca-do-comercio.jpg" width="900" height="466" class="w-full h-48 object-cover" alt="Praça do Comércio (Terreiro do Paço) in central Lisbon" loading="lazy" decoding="async">
+      <picture>
+        <source srcset="images/praca-do-comercio.webp" type="image/webp">
+        <img src="images/praca-do-comercio.jpg" width="900" height="466" class="w-full h-48 object-cover" alt="Praça do Comércio (Terreiro do Paço) in central Lisbon" loading="lazy" decoding="async">
+      </picture>
       <div class="p-6 flex flex-col flex-1">
         <h3 class="font-semibold text-lg mb-2">Historical City Center Tour</h3>
         <p class="text-[#1B2733]/70 text-[13px] leading-relaxed mb-4 flex-1">Ride through Terreiro do Paço, Chiado, Baixa and the Carmo Ruins, with stops at São Pedro de Alcântara Viewpoint, Estrela Basilica and the Parliament.</p>
@@ -342,7 +355,10 @@
     </div>
     <!-- TOUR 3 -->
     <div id="tour-belem" class="bg-white rounded-2xl overflow-hidden shadow-sm border border-black/5 flex flex-col">
-      <img src="images/belem-tower-tuktuk.jpg" width="1536" height="864" class="w-full h-48 object-cover" alt="A David Tours tuk-tuk parked in front of Belém Tower" loading="lazy" decoding="async">
+      <picture>
+        <source srcset="images/belem-tower-tuktuk-card.webp" type="image/webp">
+        <img src="images/belem-tower-tuktuk-card.jpg" width="800" height="450" class="w-full h-48 object-cover" alt="A David Tours tuk-tuk parked in front of Belém Tower" loading="lazy" decoding="async">
+      </picture>
       <div class="p-6 flex flex-col flex-1">
         <h3 class="font-semibold text-lg mb-2">Belém Tour</h3>
         <p class="text-[#1B2733]/70 text-[13px] leading-relaxed mb-4 flex-1">Discover the Belém Tower, Jerónimos Monastery and the Monument to the Discoveries, finished off with a tasting of the original Pastéis de Belém.</p>
@@ -373,7 +389,10 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
       <div class="lg:col-span-2 relative lg:sticky lg:top-24">
-        <img src="images/carmo-convent-ruins.jpg" width="900" height="675" class="rounded-2xl w-full h-[420px] object-cover shadow-lg" alt="The Gothic ruins of Carmo Convent, one of the hidden corners visited on tour" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="images/carmo-convent-ruins.webp" type="image/webp">
+          <img src="images/carmo-convent-ruins.jpg" width="900" height="675" class="rounded-2xl w-full h-[420px] object-cover shadow-lg" alt="The Gothic ruins of Carmo Convent, one of the hidden corners visited on tour" loading="lazy" decoding="async">
+        </picture>
         <div class="absolute -bottom-6 -right-6 bg-[#1B2733] text-white rounded-xl shadow-lg px-5 py-4 hidden sm:block">
           <p class="text-2xl font-semibold text-[#D4A24C]">8+</p>
           <p class="text-[11px] text-white/60 mt-0.5">Years guiding Lisbon</p>
@@ -383,42 +402,42 @@
       <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 text-left">
         <div>
           <div class="w-10 h-10 rounded-lg bg-[#1D5C8A]/10 flex items-center justify-center text-[#1D5C8A] mb-4">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20h-10a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2h6l4 4h0a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2z"/><circle cx="8.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg>
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20h-10a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2h6l4 4h0a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2z"/><circle cx="8.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg>
           </div>
           <h3 class="font-semibold text-[15px] mb-1.5">Private for your group</h3>
           <p class="text-[#1B2733]/70 text-[13px] leading-relaxed">No strangers, no shared seats, no waiting on other passengers — the tuk-tuk is booked exclusively for you and up to 5 others.</p>
         </div>
         <div>
           <div class="w-10 h-10 rounded-lg bg-[#C1440E]/10 flex items-center justify-center text-[#C1440E] mb-4">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5l-2 5-5 2 2-5z"/></svg>
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5l-2 5-5 2 2-5z"/></svg>
           </div>
           <h3 class="font-semibold text-[15px] mb-1.5">Genuinely local guide</h3>
           <p class="text-[#1B2733]/70 text-[13px] leading-relaxed">David was born and raised in Lisbon. You get the stories, viewpoints and shortcuts a script can't teach a hired-for-the-summer guide.</p>
         </div>
         <div>
           <div class="w-10 h-10 rounded-lg bg-[#D4A24C]/20 flex items-center justify-center text-[#154A6E] mb-4">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19l5-9 3.5 5.5L14 11l7 8"/><path d="M3 19h18"/></svg>
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19l5-9 3.5 5.5L14 11l7 8"/><path d="M3 19h18"/></svg>
           </div>
           <h3 class="font-semibold text-[15px] mb-1.5">Hills without the hike</h3>
           <p class="text-[#1B2733]/70 text-[13px] leading-relaxed">Alfama and Graça are stunning and steep. The tuk-tuk climbs the cobblestones so you arrive at each viewpoint ready to enjoy it, not out of breath.</p>
         </div>
         <div>
           <div class="w-10 h-10 rounded-lg bg-[#1D5C8A]/10 flex items-center justify-center text-[#1D5C8A] mb-4">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-2h6l2 2h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.2"/></svg>
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-2h6l2 2h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.2"/></svg>
           </div>
           <h3 class="font-semibold text-[15px] mb-1.5">Built for photos</h3>
           <p class="text-[#1B2733]/70 text-[13px] leading-relaxed">Open-air rides with unobstructed views. We stop wherever the light and the view are worth it — no fixed script to rush you along.</p>
         </div>
         <div>
           <div class="w-10 h-10 rounded-lg bg-[#C1440E]/10 flex items-center justify-center text-[#C1440E] mb-4">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
           </div>
           <h3 class="font-semibold text-[15px] mb-1.5">Flexible scheduling</h3>
           <p class="text-[#1B2733]/70 text-[13px] leading-relaxed">Mornings, afternoons or golden-hour sunset — tell us what fits your trip and we'll build the tour around it, not the other way around.</p>
         </div>
         <div>
           <div class="w-10 h-10 rounded-lg bg-[#D4A24C]/20 flex items-center justify-center text-[#154A6E] mb-4">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.57L4 20l1.1-4.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.57L4 20l1.1-4.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
           </div>
           <h3 class="font-semibold text-[15px] mb-1.5">Easy WhatsApp booking</h3>
           <p class="text-[#1B2733]/70 text-[13px] leading-relaxed">Message David directly with your dates. No accounts, no third-party platforms, no waiting on hold — just a straight answer.</p>
@@ -438,17 +457,17 @@
     <div class="relative">
       <button onclick="scrollGallery(-1)" data-ga="gallery_scroll" data-ga-label="left" aria-label="Scroll gallery left" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/90 backdrop-blur shadow-md flex items-center justify-center hover:bg-white text-lg">←</button>
       <button onclick="scrollGallery(1)" data-ga="gallery_scroll" data-ga-label="right" aria-label="Scroll gallery right" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/90 backdrop-blur shadow-md flex items-center justify-center hover:bg-white text-lg">→</button>
-      <div id="gallery-scroll" class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth pb-2">
-        <img src="images/alfama-viewpoint.jpg" width="900" height="675" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="View over Alfama's rooftops from a Lisbon viewpoint" loading="lazy" decoding="async">
-        <img src="images/sao-jorge-castle.jpg" width="900" height="492" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="São Jorge Castle overlooking Lisbon's Old Town" loading="lazy" decoding="async">
-        <img src="images/praca-do-comercio.jpg" width="900" height="466" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="Praça do Comércio at golden hour" loading="lazy" decoding="async">
-        <img src="images/belem-tower-monument.jpg" width="900" height="600" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="Belém Tower" loading="lazy" decoding="async">
-        <img src="images/jeronimos-tuktuk.jpg" width="900" height="506" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="A David Tours tuk-tuk in front of Jerónimos Monastery" loading="lazy" decoding="async">
-        <img src="images/pasteis-belem-shop.jpg" width="900" height="900" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="The original Pastéis de Belém bakery, tasted on the Belém Tour" loading="lazy" decoding="async">
-        <img src="images/tram28-cathedral.jpg" width="900" height="1013" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="Tram 28 in front of Lisbon Cathedral" loading="lazy" decoding="async">
-        <img src="images/monument-discoveries.jpg" width="900" height="878" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="Monument to the Discoveries on the Tagus riverfront" loading="lazy" decoding="async">
-        <img src="images/estrela-basilica.jpg" width="900" height="900" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="Estrela Basilica with a Lisbon tram in front" loading="lazy" decoding="async">
-        <img src="images/hero-tuktuk-alfama.jpg" width="900" height="506" class="rounded-xl flex-none w-64 sm:w-72 h-72 object-cover snap-start" alt="A David Tours tuk-tuk on an Alfama street at golden hour" loading="lazy" decoding="async">
+      <div id="gallery-scroll" tabindex="0" role="region" aria-label="Photo gallery, scrollable" class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth pb-2 focus:outline-none focus:ring-2 focus:ring-[#1D5C8A]/40">
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/alfama-viewpoint.webp" type="image/webp"><img src="images/alfama-viewpoint.jpg" width="900" height="675" class="w-full h-full object-cover" alt="View over Alfama's rooftops from a Lisbon viewpoint" loading="lazy" decoding="async"></picture>
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/sao-jorge-castle.webp" type="image/webp"><img src="images/sao-jorge-castle.jpg" width="900" height="492" class="w-full h-full object-cover" alt="São Jorge Castle overlooking Lisbon's Old Town" loading="lazy" decoding="async"></picture>
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/praca-do-comercio.webp" type="image/webp"><img src="images/praca-do-comercio.jpg" width="900" height="466" class="w-full h-full object-cover" alt="Praça do Comércio at golden hour" loading="lazy" decoding="async"></picture>
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/belem-tower-monument.webp" type="image/webp"><img src="images/belem-tower-monument.jpg" width="900" height="600" class="w-full h-full object-cover" alt="Belém Tower" loading="lazy" decoding="async"></picture>
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/jeronimos-tuktuk.webp" type="image/webp"><img src="images/jeronimos-tuktuk.jpg" width="900" height="506" class="w-full h-full object-cover" alt="A David Tours tuk-tuk in front of Jerónimos Monastery" loading="lazy" decoding="async"></picture>
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/pasteis-belem-shop.webp" type="image/webp"><img src="images/pasteis-belem-shop.jpg" width="900" height="900" class="w-full h-full object-cover" alt="The original Pastéis de Belém bakery, tasted on the Belém Tour" loading="lazy" decoding="async"></picture>
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/tram28-cathedral.webp" type="image/webp"><img src="images/tram28-cathedral.jpg" width="900" height="1013" class="w-full h-full object-cover" alt="Tram 28 in front of Lisbon Cathedral" loading="lazy" decoding="async"></picture>
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/monument-discoveries.webp" type="image/webp"><img src="images/monument-discoveries.jpg" width="900" height="878" class="w-full h-full object-cover" alt="Monument to the Discoveries on the Tagus riverfront" loading="lazy" decoding="async"></picture>
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/estrela-basilica.webp" type="image/webp"><img src="images/estrela-basilica.jpg" width="900" height="900" class="w-full h-full object-cover" alt="Estrela Basilica with a Lisbon tram in front" loading="lazy" decoding="async"></picture>
+        <picture class="rounded-xl overflow-hidden flex-none w-64 sm:w-72 h-72 snap-start"><source srcset="images/hero-tuktuk-alfama.webp" type="image/webp"><img src="images/hero-tuktuk-alfama.jpg" width="900" height="506" class="w-full h-full object-cover" alt="A David Tours tuk-tuk on an Alfama street at golden hour" loading="lazy" decoding="async"></picture>
       </div>
     </div>
   </div>
@@ -545,42 +564,42 @@
       <details class="group py-5">
         <summary class="flex items-center justify-between cursor-pointer list-none text-[14px] font-medium">
           Is the €150 price per person or per tuk-tuk?
-          <span class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
+          <span aria-hidden="true" class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
         </summary>
         <p class="text-[#1B2733]/70 text-[13px] leading-relaxed mt-3">It's a flat €150 per tuk-tuk, not per person. So solo it's €150, split between 2 it's €75 each, and a full group of 6 pays roughly €25 per person — same private tour either way.</p>
       </details>
       <details class="group py-5">
         <summary class="flex items-center justify-between cursor-pointer list-none text-[14px] font-medium">
           How long does each tour last?
-          <span class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
+          <span aria-hidden="true" class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
         </summary>
         <p class="text-[#1B2733]/70 text-[13px] leading-relaxed mt-3">Every tour — Old Town, Historical City Center and Belém — runs for approximately 2 hours.</p>
       </details>
       <details class="group py-5">
         <summary class="flex items-center justify-between cursor-pointer list-none text-[14px] font-medium">
           How many people can join?
-          <span class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
+          <span aria-hidden="true" class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
         </summary>
         <p class="text-[#1B2733]/70 text-[13px] leading-relaxed mt-3">Each tuk-tuk comfortably seats up to 6 guests, and every tour is private to your group.</p>
       </details>
       <details class="group py-5">
         <summary class="flex items-center justify-between cursor-pointer list-none text-[14px] font-medium">
           How do I book a tour?
-          <span class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
+          <span aria-hidden="true" class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
         </summary>
         <p class="text-[#1B2733]/70 text-[13px] leading-relaxed mt-3">Message us on WhatsApp with your preferred date and tour, or use the reservation form above — no account or payment required upfront.</p>
       </details>
       <details class="group py-5">
         <summary class="flex items-center justify-between cursor-pointer list-none text-[14px] font-medium">
           Can I choose more than one tour in a day?
-          <span class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
+          <span aria-hidden="true" class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
         </summary>
         <p class="text-[#1B2733]/70 text-[13px] leading-relaxed mt-3">Yes — just let us know on WhatsApp and we'll help you schedule multiple tours back to back.</p>
       </details>
       <details class="group py-5">
         <summary class="flex items-center justify-between cursor-pointer list-none text-[14px] font-medium">
           Where does the tour start?
-          <span class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
+          <span aria-hidden="true" class="text-[#1B2733]/70 group-open:rotate-45 transition-transform">+</span>
         </summary>
         <p class="text-[#1B2733]/70 text-[13px] leading-relaxed mt-3">The exact pickup point in central Lisbon is confirmed with you directly over WhatsApp once your date is set.</p>
       </details>
@@ -597,7 +616,7 @@
         <span class="w-7 h-7 rounded-full bg-[#1D5C8A] inline-flex items-center justify-center text-sm" aria-hidden="true">🛺</span>
         David Tours
       </p>
-      <p class="text-white/50 text-[13px] max-w-xs leading-relaxed mb-6">See Lisbon through local eyes. Real Lisbon. Real locals. Real stories.</p>
+      <p class="text-white/50 text-[13px] max-w-xs leading-relaxed mb-6">Private tuk-tuk tours of Lisbon through Alfama, Belém and the historic center. Real Lisbon. Real locals. Real stories.</p>
       <a href="https://wa.me/351937586952" target="_blank" rel="noopener noreferrer" data-ga="whatsapp_click" data-ga-label="footer" class="inline-block bg-white text-[#1B2733] rounded-full px-5 py-2.5 text-[13px] font-medium">Book on WhatsApp</a>
     </div>
     <div>
@@ -625,7 +644,7 @@
 <!-- COOKIE CONSENT BANNER -->
 <div id="cookie-banner" class="hidden fixed bottom-0 inset-x-0 z-[100] bg-[#1B2733] text-white px-6 py-5 shadow-[0_-4px_20px_rgba(0,0,0,0.2)]">
   <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-    <p class="text-[13px] text-white/80 leading-relaxed">We use Google Analytics cookies to understand how visitors use this site. <a href="privacy.html" class="underline hover:text-white">Learn more</a>.</p>
+    <p class="text-[13px] text-white/80 leading-relaxed">We use Google Analytics cookies to understand how visitors use this site. <a href="privacy.html" class="underline hover:text-white">Learn more about our cookie use</a>.</p>
     <div class="flex items-center gap-3 shrink-0">
       <button onclick="rejectCookies()" class="text-[13px] font-medium text-white/70 hover:text-white px-4 py-2">Reject</button>
       <button onclick="acceptCookies()" class="text-[13px] font-semibold bg-[#1D5C8A] hover:bg-[#154A6E] rounded-full px-5 py-2">Accept</button>
